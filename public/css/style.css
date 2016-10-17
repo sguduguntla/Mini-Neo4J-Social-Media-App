@@ -1,0 +1,31 @@
+.searchResult {
+  border-top: 1px solid black;
+  position: relative;
+  left: 100px;
+}
+.ui-tooltip {
+  background: #4a4a4a;
+  color: #96f226;
+  border: 2px solid #454545;
+  border-radius: 0px;
+  box-shadow: 0 0
+}
+.ui-autocomplete {
+  font-size: 1.5em;
+  border: none;
+  max-height: 300px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+.ui-menu .ui-menu-item:hover {
+  border: none;
+}
+.ui-menu .ui-menu-item a:hover {
+  border: none;
+}
+
+* html .ui-autocomplete {
+  height: 300px;
+}

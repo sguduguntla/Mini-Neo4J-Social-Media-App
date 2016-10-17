@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Sriharsha Guduguntla">
+  <title>Sign Up!</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection">
+  <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <form id="searchForm">
+            <div style="background-color: white" class="input-field">
+              <input id="search" placeholder="Search Users by Name" type="search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <br/>
+    <br/>
+    <div id="searchResults"></div>
+    <br/>
+    <div class="row">
+      <form id="form-signup" class="col s12 m12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="firstname" name="first_name" type="text" class="validate">
+            <label for="firstname">First Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="lastname" name="last_name" type="text" class="validate">
+            <label for="lastname">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" name="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">perm_identity</i>
+            <input id="username" type="text" name="username" class="validate">
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="password" type="password" name="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn btn-waves white black-text">
+              <span>Choose file</span>
+              <input name="profilePic" type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input name="profilePic" class="file-path validate" placeholder="Choose a profile picture" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="formStatusMsg"></div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input class="btn btn-waves black-text white" id="submit" type="submit" value="Sign Up!" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="js/ejs.min.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="js/addfriends.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
