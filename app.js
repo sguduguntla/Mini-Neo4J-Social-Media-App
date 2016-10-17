@@ -114,7 +114,7 @@ app.post('/users/login', function(req, res) {
 
 });
 
-app.listen(process.env.PORT);
+app.listen(3000);
 
 console.log("Server Started on Port 3000");
 
